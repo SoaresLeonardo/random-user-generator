@@ -36,11 +36,12 @@ export default function App() {
       <div className="content">
         <div className="user-image">
           <img src={data.picture?.large} alt={data.name?.first} />
+          <span className="user-name">{data.name?.first}</span>
         </div>
         <div className="user-info">
-          <span className="user-email"></span>
-          <span className="user-tell"></span>
-          <span className="user-country"></span>
+          <span className="user-email">{data.email}</span>
+          <span className="user-tell">{data.phone}</span>
+          <span className="user-country">{data.phone}</span>
         </div>
       </div>
     </div>
